@@ -1,0 +1,172 @@
+{
+  "landscape_architecture/major_transfer": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "landscape_architecture/art_foundation": 1
+    }
+  },
+  "landscape_architecture/art_exam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "landscape_architecture/art_foundation": 2
+    }
+  },
+  "landscape_architecture/garden_department": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "landscape_architecture/degree": 1
+    }
+  },
+  "landscape_architecture/employment_prospect": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "landscape_architecture/course": 1
+    }
+  },
+  "landscape_architecture/doctoral_program": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "landscape_architecture/greet": 1
+    }
+  },
+  "landscape_architecture/postgraduate_school": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "landscape_architecture/garden_department": 1
+    }
+  },
+  "landscape_architecture/design": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "landscape_architecture/garden_difference": 1
+    }
+  },
+  "landscape_architecture/why_degree_difference": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "landscape_architecture/garden_difference": 1
+    }
+  },
+  "landscape_architecture/greet": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "landscape_architecture/course": 1
+    }
+  },
+  "landscape_architecture/degree": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "landscape_architecture/art_exam": 1,
+      "landscape_architecture/garden_department": 1
+    }
+  },
+  "landscape_architecture/art_foundation": {
+    "precision": 0.42857142857142855,
+    "recall": 0.5,
+    "f1-score": 0.4615384615384615,
+    "support": 6,
+    "confused_with": {
+      "landscape_architecture/art_exam": 1,
+      "landscape_architecture/major_transfer": 1
+    }
+  },
+  "landscape_architecture/garden_difference": {
+    "precision": 0.5,
+    "recall": 0.75,
+    "f1-score": 0.6,
+    "support": 4,
+    "confused_with": {
+      "landscape_architecture/art_exam": 1
+    }
+  },
+  "landscape_architecture/major_transfer_range": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "landscape_architecture/garden_department": 1
+    }
+  },
+  "landscape_architecture/course": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "landscape_architecture/greet": 1,
+      "landscape_architecture/degree": 1
+    }
+  },
+  "landscape_architecture/admission_subject": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "landscape_architecture/degree": 1
+    }
+  },
+  "landscape_architecture/retreat": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "landscape_architecture/major_transfer": 1
+    }
+  },
+  "landscape_architecture/confirm": {
+    "precision": 1.0,
+    "recall": 0.4166666666666667,
+    "f1-score": 0.5882352941176471,
+    "support": 12,
+    "confused_with": {
+      "landscape_architecture/course": 2,
+      "landscape_architecture/degree": 2
+    }
+  },
+  "accuracy": 0.28205128205128205,
+  "macro avg": {
+    "precision": 0.1134453781512605,
+    "recall": 0.09803921568627451,
+    "f1-score": 0.09704551503859461,
+    "support": 39
+  },
+  "weighted avg": {
+    "precision": 0.42490842490842484,
+    "recall": 0.28205128205128205,
+    "f1-score": 0.313539853811347,
+    "support": 39
+  }
+}

@@ -1,0 +1,136 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - 老师您好。我是考生家长，想咨询个问题，我是河南省{entity: province}的考生。
+    - 您好，是北京林业大学吗？
+    - 你好老师，我是今年的高考生。
+    - 老师我想咨询问题
+    - hello
+- intent: greet_confirm
+  examples: |
+    - 理科生
+    - 我是理科生
+- intent: landscape_architecture/art_exam
+  examples: |
+    - 园林专业，如果录取的话，他是要加试素描吗？还是……
+    - 你好，我想问一下，看那个招生简章里面，有风景园林，城乡规划还有园林，有一个需要有一定的美术基础。这个是入学以后有相关的考试吗？
+- intent: landscape_architecture/confirm
+  examples: |
+    - 我看的专业上建议有。
+    - 哦
+    - 嗯，有点偏设计是吧。
+    - 哦，就得看个人的努力了对不对？
+    - 农学
+    - 不是工学吗？
+    - 我看到有的是给的工学的学位，有的是给农学的。
+    - 嗷，好，行
+    - 嗯
+    - 嗷，看那个选科要求？
+    - 没有复核，进去后再可以学基础的美术就行是吧？
+    - 这个也是属于这个A级学科里的是吧，我也希望孩子能学，我孩子还好，我就自己很着急，因为孩子一直都没有从事这个画画，我后也没有仔细去看那个重点。
+- intent: goodbye
+  examples: |
+    - 好的好的，谢谢您，老师。
+    - 哦，主要是这个哈。
+    - 再见
+- intent: landscape_architecture/art_foundation
+  examples: |
+    - 风景园林不是要求有一定的绘画或者美术功底吗？如果没有是不是不建议报。
+    - 山东{entity:privince}的，然后看风景园林招生简章上上写着有一条是报考园林和风景园林城乡规划专业的考生，建议具备一定的美术基础，这一个是什么意思，必须得学美术的吗？
+    - 您好，我想问问，我们看章程里边园林、风景园林说要有一定的美术基础，我们没有考过什么证，但是美术还比较喜欢，这个可以吗?
+    - 我想咨询一下招生简章里说风景园林，城乡规划必须有美术基础，如果没有美术基础的话会被退档吗？
+    - 你好，我想咨询一下，我看招生简章上写着说报考园林，风景园林，城乡规划的考生，建议具备一定的美术基础，这个美术基础是要有什么证，或者其它什么的吗？还是说曾经学过美术？
+    - 您好，我真不好意思，问一下，我的孩子录取了您学校里面的园林专业，我都害怕的这几天都睡不着，这孩子要学，画画不行怎么办呀？
+- intent: landscape_architecture/design
+  examples: |
+    - 我想问一下，园林和风景园林属于设计类的嘛？
+- intent: thanks
+  examples: |
+    - 那我知道了。谢谢。
+    - 嗯，好好，谢谢你。
+    - 好的，谢谢老师，我知道了。
+    - 好好，谢谢您
+    - 好好谢谢。
+    - 嗯，好嘞，好的，谢谢啊
+    - 好的好的，谢谢。
+- intent: landscape_architecture/greet
+  examples: |
+    - 你好，我想咨询一下，我是想着报一个风景园林和这个园林专业。
+- intent: confirm
+  examples: |
+    - 明白了
+- intent: landscape_architecture/course
+  examples: |
+    - 我想问一下，风景园林专业是学什么的？
+    - 哦，老师我想问一下，这个专业他都设哪些课程啊？
+- intent: landscape_architecture/garden_difference
+  examples: |
+    - 他和园林类这两个有啥区别吗？
+    - 哎，我想咨询一下咱们学校园林专业跟风景园林这个专业的区别。
+    - 园林和风景园林还是有区别的吧。
+    - 您好，我想咨询一下。你们学校风景园林跟园林有什么区别的呀？
+- intent: landscape_architecture/major_transfer
+  examples: |
+    - 嗯，那老师我想问的是，如果我进的是园林专业，能不能在一个学期之后转成风景园林？
+- intent: landscape_architecture/major_transfer_range
+  examples: |
+    - 是不是基本上每个专业都有转的机会？
+- intent: landscape_architecture/doctoral_program
+  examples: |
+    - 老师另外一个问题就是园林这个专业，他考研发现北林没有园林的博士点，有风景园林的博士点。
+- intent: landscape_architecture/degree
+  examples: |
+    - 园林这个专业，他毕业以后是什么学位呢？
+    - 嗯，我想问一下，风景园林给的是工学学士学位对吧？
+- intent: landscape_architecture/garden_department
+  examples: |
+    - 哦，好的，老师园林是风景园林系的吗？
+- intent: landscape_architecture/employment_prospect
+  examples: |
+    - 我想问一下 我们学校风景园林专业就业亲前景情况是怎么样的 ？
+- intent: landscape_architecture/postgraduate_school
+  examples: |
+    - 嗯嗯，那么他要考研究生的话，他一般他得往那些学校去考?
+- intent: landscape_architecture/admission_subject
+  examples: |
+    - 好，那这个专业它与物理化学没有关系?
+    - 专业和物理有没有关系？
+- intent: landscape_architecture/retreat
+  examples: |
+    - 不是必备的，不会退吧?
+    - 没有基础不会退档吧
+- intent: landscape_architecture/why_degree_difference
+  examples: |
+    - 为什么两个有差？
+    - 为什么这两个有差别？
+
+- intent: greet_&_recruitment
+  examples: |
+    - 您好，老师，我想咨询一下报考的事儿
+
+- intent: recruitment/information
+  examples: |
+    - 我们家孩子想报考咱们林大的应用心理学{entity:major}, 他是618分
+
+- intent: recruitment/reach
+  examples: |
+    - 我想问一下，我家孩子报了北京林业大学，孩子的分数有没有可能被录取？
+
+- intent: recruitment/province
+  examples: |
+    - 是江苏省{entity: province}。
+    - 北京市{entity: province}
+    - 四川省{entity: province}
+
+- intent: recruitment/borderline
+  examples: |
+    - 哦哦，谢谢啊。我就想问一下，你们那个大概那个分数是多少？
+
+- intent: recruitment/type
+  examples: |
+    -  哦，我们学的是理科{entity:typecourse}，是物化这一块。
+    - 学文科{entity:typecourse}的。
+    - 我是理科生{entity:typecourse}。
+
+

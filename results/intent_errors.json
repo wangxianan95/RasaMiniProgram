@@ -1,0 +1,18 @@
+[
+  {
+    "text": "哦",
+    "intent": "landscape_architecture",
+    "intent_prediction": {
+      "name": "thanks",
+      "confidence": 0.9651345610618591
+    }
+  },
+  {
+    "text": "嗷，好，行",
+    "intent": "landscape_architecture",
+    "intent_prediction": {
+      "name": "thanks",
+      "confidence": 0.9986704587936401
+    }
+  }
+]

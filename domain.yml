@@ -1,0 +1,162 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- confirm:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- greet:
+    use_entities: true
+- greet_confirm:
+    use_entities: true
+- landscape_architecture:
+    use_entities: true
+- landscape_architecture/admission_subject:
+    use_entities: true
+- landscape_architecture/art_exam:
+    use_entities: true
+- landscape_architecture/art_foundation:
+    use_entities: true
+- landscape_architecture/confirm:
+    use_entities: true
+- landscape_architecture/course:
+    use_entities: true
+- landscape_architecture/degree:
+    use_entities: true
+- landscape_architecture/design:
+    use_entities: true
+- landscape_architecture/doctoral_program:
+    use_entities: true
+- landscape_architecture/employment_prospect:
+    use_entities: true
+- landscape_architecture/garden_department:
+    use_entities: true
+- landscape_architecture/garden_difference:
+    use_entities: true
+- landscape_architecture/greet:
+    use_entities: true
+- landscape_architecture/major_transfer:
+    use_entities: true
+- landscape_architecture/major_transfer_range:
+    use_entities: true
+- landscape_architecture/postgraduate_school:
+    use_entities: true
+- landscape_architecture/retreat:
+    use_entities: true
+- landscape_architecture/why_degree_difference:
+    use_entities: true
+- thanks:
+    use_entities: true
+entities:
+- province
+- course
+- typecourse
+- major
+slots:
+  province:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: 北京
+    auto_fill: true
+    influence_conversation: true
+  course:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  typecourse:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: 理科
+    auto_fill: true
+    influence_conversation: true
+responses:
+  utter_greet:
+  - text: 你好，北林招办
+  - text: 嗯嗯，你有什么问题？是文科生还是理科生？
+  - text: 对对对
+  - text: 嗯，你说。
+  utter_Arts_and_Sciences:
+  - text: 嗯
+  utter_landscape_architecture_artexam:
+  - text: 不，不要求有美术工功底，但是建议有美术功底。
+  - text: 没有相关的考试，我们是建议大家有一定的美术基础。因为这三个专业进校之后会学习一些包括素描、水彩相关的美术课程。如果有相应的美术基础的话，学起来压力没有那么大。
+  utter_landscape_architecture_confirm:
+  - text: 对，你要没有美术基础，我们一上来就有大量课程画图，如果没有基础的话会非常辛苦的。
+  - text: 风景园林专业，他在这个大学的学习中可能有一定的美术功底的话，更有利于大学四年的学习。
+  - text: 嗯嗯
+  - text: 对对，确实是这样的。
+  - text: 嗯
+  - text: 风园是工学。
+  - text: 以北京林业大学官网为准。
+  - text: 这个学生毕业以后可以在城乡建设，市城交通，自然保护,风景园林还有些教育部门从事。或者从事风景区以及这种风景区城乡园林绿地，国土与区域这些方面的工作，还有一些规划，设计这些工作，还有科研等等。
+  - text: 其他的学校，比如说北大，清华，还有同济，中南大学这些.
+  - text: 对
+  - text: 我们是会从基础开始学，但是因为学的时间很短，美术这种东西不是说马上就能提高的，所以我们建议有美术基础.
+  - text: 您也不用太焦虑，因为我们录取之后会从头开始学的，我们学校的话，园林和风景园林学的课程基本上是一样的，只不过是偏重不太一样，风景园林偏设计，园林偏重植物，大学的课程种类都是差不多的。
+  utter_landscape_architecture_art_foundation:
+  - text: 哦对，这个也是建议，也不是说有限制。
+  - text: 呃，不是我们这边是建议需要一定的美术基础，因为像我们所提到的这三个专业，他在入学之后都会学习很多的，包括素描，色彩以及水彩的色彩构成，立体基础这样一些偏向美术课程，如果有美术基础的话学起来可能会相对来说没有那么大压力。
+  - text: 我们没说必须有美术基础，我们是建议有美术基础，我们开学没有复核.
+  - text: 我们入学之后，零基础可以从头开始教的，我们会有开设相应的课程。
+  utter_landscape_architecture_design:
+  - text: 偏设计。
+  utter_landscape_architecture_greet:
+  - text: 哪个省份的?
+  utter_landscape_architecture_course:
+  - text: 我们是学园林设计，然后植物景观设计这样子的。
+  - text: 他学的课程有中外园林史以及风景园林艺术原理，还有风景建筑设计，园林工程等等，还有系统规划，景观归划，应用设计这些。
+  utter_landscape_architecture_garden_difference:
+  - text: 唯一的区别可能就是风景园林是工学学士学位，园林是农学学士学位，但这两个在授课教师还有课程安排上基本没差别，园林可能会在植物方面学得多一点。
+  - text: 园林可能就是植物和设计并重，风景园林可能更偏向于画图一点，对于画图的工作量上要求会更多一点。
+  - text: 是这样的，我们学校王牌，就是A+学科是风景园林学科，风景园林学科下面有风景园林、园林和园艺三个不同的专业
+  - text: 我们风景园林和园林他们学的专业课程都是一样的，但是侧重点会不一样，风景园林的话，它的建筑学习会多一个学期，园林的话，对植物的要求会比风景园林高，普通的植物，包括花卉树木都会多一些，然后要求也较高。
+  utter_goodbye:
+  - text: Bye
+  - text: 嗯，再见。
+  - text: 没事没事，再见。
+  utter_landscape_architecture_major_transfer:
+  - text: 转专业是可以有机会的，但是自己能不能转进去，还要看您的成绩呀，或者说当时考试前人家的各项政策要求。
+  utter_landscape_architecture_major_transfer_range:
+  - text: 嗯，对，是有机会的，但是能不能成功还要看到时候的成绩以及表现。
+  utter_landscape_architecture_doctoral_program:
+  - text: 对,园林的就直接授予，就是您可以考相应的导师，然后授予风园的学位。
+  utter_landscape_architecture_degree:
+  - text: 园林是农学。
+  - text: 对，园林给的是农学学士学位。
+  utter_landscape_architecture_garden_department:
+  - text: 我们学校不分院系，我们是学院下面直接设专业。
+  utter_thanks:
+  - text: 嗯。
+  - text: 好再见。
+  - text: 嗯，再见
+  utter_landscape_architecture/employment_prospect:
+  - text: 风景园林，我建议您看看北京林业大学本科招生网上的相关介绍，您稍等。
+  utter_landscape_architecture_postgraduate_school:
+  - text: 嗯，我们学校也有对应的这个硕士点，有风景园林硕士,其他的学校也有。
+  utter_landscape_architecture_admission_subject:
+  - text: 您就看这个的专业报考要求有哪些内容，你们应该能看到。
+  utter_landscape_architecture_retreat:
+  - text: 不会退档。
+  utter_landscape_architecture_why_degree_difference:
+  - text: 这个就是规定，但是在就业方面这两个没有什么区别，就是工学和农学这个学士学位没有什么区别。
+  utter_ask_province:
+  - text: 你所在的省份是哪个？
+  utter_ask_typecourse:
+  - text: 文科生还是理科生？
+  utter_recruitment:
+  - text: 你们省排名10000可能会被录取
+actions:
+- action_province
+- action_course
+
+#forms: {}
+#  recruitment_form:
+#    required_slots:
+#      province:
+#        - type: text
+#      typecourse:
+#        - type: text
+e2e_actions: []

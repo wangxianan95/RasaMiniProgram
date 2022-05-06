@@ -1,0 +1,188 @@
+version: "2.0"
+
+stories:
+
+- story: landscape_architecture_01
+  steps:
+  - action: utter_greet
+  - intent: greet
+  - action: action_province
+  - action: utter_greet
+  - intent: greet_confirm
+  - action: action_course
+  - action: utter_Arts_and_Sciences
+  - intent: landscape_architecture/artexam
+  - action: utter_landscape_architecture_artexam
+  - intent: landscape_architecture/confirm
+  - action: utter_landscape_architecture_confirm
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story:  landscape_architecture_02
+  steps:
+  - action: utter_greet
+  - intent: landscape_architecture/art_foundation
+  - action: utter_landscape_architecture_art_foundation
+  - intent: landscape_architecture/confirm
+  - action: utter_landscape_architecture_confirm
+
+- story:  landscape_architecture_03
+  steps:
+  - action: utter_greet
+  - intent: landscape_architecture/design
+  - action: utter_landscape_architecture_design
+  - intent: landscape_architecture/confirm
+  - action: utter_landscape_architecture_confirm
+  - intent: thanks
+  - action: utter_goodbye
+
+- story:  landscape_architecture_04
+  steps:
+  - action: utter_greet
+  - intent: landscape_architecture/greet
+  - action: utter_landscape_architecture_greet
+  - intent: landscape_architecture/art_foundation
+  - action: utter_landscape_architecture_art_foundation
+  - intent: confirm
+  - action: utter_goodbye
+
+- story:  landscape_architecture_05
+  steps:
+  - action: utter_greet
+  - intent: greet
+  - action: utter_greet
+  - intent: landscape_architecture/course
+  - action: utter_landscape_architecture_course
+  - intent: landscape_architecture/garden_difference
+  - action: utter_landscape_architecture_garden_difference
+  - intent: thanks
+  - action: utter_goodbye
+
+- story:  landscape_architecture_06
+  steps:
+  - action: utter_greet
+  - intent: greet
+  - action: utter_greet
+  - intent: landscape_architecture/garden_difference
+  - action: utter_landscape_architecture_garden_difference
+  - intent: landscape_architecture/major_transfer
+  - action: utter_landscape_architecture_major_transfer
+  - intent: landscape_architecture/major_transfer_range
+  - action: utter_landscape_architecture_major_transfer_range
+  - intent: landscape_architecture/confirm
+  - action: utter_landscape_architecture_confirm
+  - intent: landscape_architecture/doctoral_program
+  - action: utter_landscape_architecture_doctoral_program
+  - intent: landscape_architecture/degree
+  - action: utter_landscape_architecture_degree
+  - intent: landscape_architecture/confirm
+  - action: utter_landscape_architecture_confirm
+  - intent: landscape_architecture/confirm
+  - action: utter_landscape_architecture_confirm
+  - intent: landscape_architecture/confirm
+  - action: utter_landscape_architecture_confirm
+  - intent: landscape_architecture/garden_department
+  - action: utter_landscape_architecture_garden_department
+  - intent: thanks
+  - action: utter_thanks
+
+- story: landscape_architecture_07
+  steps:
+  - action: utter_greet
+  - intent: landscape_architecture/artexam
+  - action: utter_landscape_architecture_artexam
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: landscape_architecture_08
+  steps:
+  - action: utter_greet
+  - intent: landscape_architecture/art_foundation
+  - action: utter_landscape_architecture_art_foundation
+  - intent: thanks
+  - action: utter_thanks
+
+- story: landscape_architecture_09
+  steps:
+  - action: utter_greet
+  - intent: landscape_architecture/employment_prospect
+  - action: utter_landscape_architecture/employment_prospect
+  - intent: landscape_architecture/confirm
+  - action: utter_landscape_architecture_confirm
+  - intent: landscape_architecture/postgraduate_school
+  - action: utter_landscape_architecture_postgraduate_school
+  - intent: landscape_architecture/confirm
+  - action: utter_landscape_architecture_confirm
+  - intent: landscape_architecture/course
+  - action: utter_landscape_architecture_course
+  - intent: landscape_architecture/admission_subject
+  - action: utter_landscape_architecture_admission_subject
+  - intent: landscape_architecture/confirm
+  - action: utter_landscape_architecture_confirm
+  - intent: thanks
+  - action: utter_thanks
+
+- story:  landscape_architecture_10
+  steps:
+  - action: utter_greet
+  - intent: landscape_architecture/art_foundation
+  - action: utter_landscape_architecture_art_foundation
+  - intent: landscape_architecture/confirm
+  - action: utter_landscape_architecture_confirm
+  - intent: landscape_architecture/retreat
+  - action: utter_landscape_architecture_retreat
+  - intent: thanks
+  - action: utter_thanks
+
+- story:  landscape_architecture_11
+  steps:
+  - action: utter_greet
+  - intent: landscape_architecture/art_foundation
+  - action: utter_landscape_architecture_art_foundation
+  - intent: thanks
+  - action: utter_thanks
+
+- story:  landscape_architecture_12
+  steps:
+  - action: utter_greet
+  - intent: landscape_architecture/art_foundation
+  - action: utter_landscape_architecture_art_foundation
+  - intent: landscape_architecture/garden_difference
+  - action: utter_landscape_architecture_garden_difference
+  - intent: landscape_architecture/confirm
+  - action: utter_landscape_architecture_confirm
+  - intent: thanks
+  - action: utter_thanks
+
+- story:  landscape_architecture_12
+  steps:
+  - action: utter_greet
+  - intent: landscape_architecture/garden_difference
+  - action: utter_landscape_architecture_garden_difference
+  - intent: landscape_architecture/degree
+  - action: utter_landscape_architecture_degree
+  - intent: landscape_architecture/why_degree_difference
+  - action: utter_landscape_architecture_why_degree_difference
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+#- story: recruitment_01
+#  steps:
+#  - action: utter_greet
+#  - intent: recruitment/reach  #form表单
+#  - action: recruitment_form
+#  - active_loop: recruitment_form
+#  - active_loop: null
+#  - action: utter_recruitment
+
+
+
+#  - action: action_province
+#  - intent: recruitment/province
+#  - action: utter_not_start
+#  - intent: recruitment/borderline
+#  - action: action_rank_infor
+#  - intent: recruitment/type
+#  - action: action_recruitment_result

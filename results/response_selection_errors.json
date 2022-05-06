@@ -1,0 +1,226 @@
+[
+  {
+    "text": "园林专业，如果录取的话，他是要加试素描吗？还是……",
+    "intent_response_key_target": "landscape_architecture/art_exam",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/art_foundation",
+      "confidence": 0.8746435642242432
+    }
+  },
+  {
+    "text": "哦，就得看个人的努力了对不对？",
+    "intent_response_key_target": "landscape_architecture/confirm",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/degree",
+      "confidence": 0.4289012551307678
+    }
+  },
+  {
+    "text": "我想问一下，园林和风景园林属于设计类的嘛？",
+    "intent_response_key_target": "landscape_architecture/design",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/garden_difference",
+      "confidence": 0.5474876165390015
+    }
+  },
+  {
+    "text": "哦，老师我想问一下，这个专业他都设哪些课程啊？",
+    "intent_response_key_target": "landscape_architecture/course",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/degree",
+      "confidence": 0.4005601108074188
+    }
+  },
+  {
+    "text": "嗯，那老师我想问的是，如果我进的是园林专业，能不能在一个学期之后转成风景园林？",
+    "intent_response_key_target": "landscape_architecture/major_transfer",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/art_foundation",
+      "confidence": 0.49569085240364075
+    }
+  },
+  {
+    "text": "哦，好的，老师园林是风景园林系的吗？",
+    "intent_response_key_target": "landscape_architecture/garden_department",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/degree",
+      "confidence": 0.27456000447273254
+    }
+  },
+  {
+    "text": "为什么两个有差？",
+    "intent_response_key_target": "landscape_architecture/why_degree_difference",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/garden_difference",
+      "confidence": 0.785381555557251
+    }
+  },
+  {
+    "text": "你好，我想问一下，看那个招生简章里面，有风景园林，城乡规划还有园林，有一个需要有一定的美术基础。这个是入学以后有相关的考试吗？",
+    "intent_response_key_target": "landscape_architecture/art_exam",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/art_foundation",
+      "confidence": 0.9955312609672546
+    }
+  },
+  {
+    "text": "我看到有的是给的工学的学位，有的是给农学的。",
+    "intent_response_key_target": "landscape_architecture/confirm",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/degree",
+      "confidence": 0.2963181436061859
+    }
+  },
+  {
+    "text": "没有复核，进去后再可以学基础的美术就行是吧？",
+    "intent_response_key_target": "landscape_architecture/confirm",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/course",
+      "confidence": 0.11842881143093109
+    }
+  },
+  {
+    "text": "是不是基本上每个专业都有转的机会？",
+    "intent_response_key_target": "landscape_architecture/major_transfer_range",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/garden_department",
+      "confidence": 0.17592070996761322
+    }
+  },
+  {
+    "text": "我想问一下 我们学校风景园林专业就业亲前景情况是怎么样的 ？",
+    "intent_response_key_target": "landscape_architecture/employment_prospect",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/course",
+      "confidence": 0.2647024393081665
+    }
+  },
+  {
+    "text": "我看的专业上建议有。",
+    "intent_response_key_target": "landscape_architecture/confirm",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/course",
+      "confidence": 0.31176215410232544
+    }
+  },
+  {
+    "text": "老师另外一个问题就是园林这个专业，他考研发现北林没有园林的博士点，有风景园林的博士点。",
+    "intent_response_key_target": "landscape_architecture/doctoral_program",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/greet",
+      "confidence": 0.17308232188224792
+    }
+  },
+  {
+    "text": "嗯嗯，那么他要考研究生的话，他一般他得往那些学校去考?",
+    "intent_response_key_target": "landscape_architecture/postgraduate_school",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/garden_department",
+      "confidence": 0.27173155546188354
+    }
+  },
+  {
+    "text": "农学",
+    "intent_response_key_target": "landscape_architecture/confirm",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/doctoral_program",
+      "confidence": 0.6784584522247314
+    }
+  },
+  {
+    "text": "这个也是属于这个A级学科里的是吧，我也希望孩子能学，我孩子还好，我就自己很着急，因为孩子一直都没有从事这个画画，我后也没有仔细去看那个重点。",
+    "intent_response_key_target": "landscape_architecture/confirm",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/art_foundation",
+      "confidence": 0.9096910357475281
+    }
+  },
+  {
+    "text": "我想咨询一下招生简章里说风景园林，城乡规划必须有美术基础，如果没有美术基础的话会被退档吗？",
+    "intent_response_key_target": "landscape_architecture/art_foundation",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/art_exam",
+      "confidence": 0.19447918236255646
+    }
+  },
+  {
+    "text": "你好，我想咨询一下，我是想着报一个风景园林和这个园林专业。",
+    "intent_response_key_target": "landscape_architecture/greet",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/course",
+      "confidence": 0.33910423517227173
+    }
+  },
+  {
+    "text": "他和园林类这两个有啥区别吗？",
+    "intent_response_key_target": "landscape_architecture/garden_difference",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/art_exam",
+      "confidence": 0.5199602246284485
+    }
+  },
+  {
+    "text": "嗯，我想问一下，风景园林给的是工学学士学位对吧？",
+    "intent_response_key_target": "landscape_architecture/degree",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/art_exam",
+      "confidence": 0.24907207489013672
+    }
+  },
+  {
+    "text": "好，那这个专业它与物理化学没有关系?",
+    "intent_response_key_target": "landscape_architecture/admission_subject",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/degree",
+      "confidence": 0.22862763702869415
+    }
+  },
+  {
+    "text": "不是工学吗？",
+    "intent_response_key_target": "landscape_architecture/confirm",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/garden_difference",
+      "confidence": 0.14113998413085938
+    }
+  },
+  {
+    "text": "风景园林不是要求有一定的绘画或者美术功底吗？如果没有是不是不建议报。",
+    "intent_response_key_target": "landscape_architecture/art_foundation",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/major_transfer",
+      "confidence": 0.20322805643081665
+    }
+  },
+  {
+    "text": "您好，我真不好意思，问一下，我的孩子录取了您学校里面的园林专业，我都害怕的这几天都睡不着，这孩子要学，画画不行怎么办呀？",
+    "intent_response_key_target": "landscape_architecture/art_foundation",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/greet",
+      "confidence": 0.23782551288604736
+    }
+  },
+  {
+    "text": "我想问一下，风景园林专业是学什么的？",
+    "intent_response_key_target": "landscape_architecture/course",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/greet",
+      "confidence": 0.21391233801841736
+    }
+  },
+  {
+    "text": "园林这个专业，他毕业以后是什么学位呢？",
+    "intent_response_key_target": "landscape_architecture/degree",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/garden_department",
+      "confidence": 0.2690795660018921
+    }
+  },
+  {
+    "text": "不是必备的，不会退吧?",
+    "intent_response_key_target": "landscape_architecture/retreat",
+    "intent_response_key_prediction": {
+      "name": "landscape_architecture/major_transfer",
+      "confidence": 0.2962113618850708
+    }
+  }
+]

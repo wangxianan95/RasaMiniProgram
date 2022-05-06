@@ -1,0 +1,22 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+#- rule: activate subscribe form
+#  steps:
+#  - intent: recruitment/reach  #从询问是否可能被录取开始
+#  - action: recruitment_form #将表单的名字看作一个action动作，表示要开始向表单中的槽添加数据
+#  - active_loop: recruitment_form  #active_loop表示激活表单
+#
+#- rule: submit form
+#  condition:
+#  - active_loop: recruitment_form
+#  steps:
+#  - action: recruitment_form
+#  - active_loop: null    #null表示停止表单
+#  - action: utter_recruitment  #表单填写结束后的下一步动作
