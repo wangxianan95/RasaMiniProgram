@@ -11,8 +11,8 @@ stories:
   - intent: greet_confirm
   - action: action_course
   - action: utter_Arts_and_Sciences
-  - intent: landscape_architecture/artexam
-  - action: utter_landscape_architecture_artexam
+  - intent: landscape_architecture/art_exam
+  - action: utter_landscape_architecture_art_exam
   - intent: landscape_architecture/confirm
   - action: utter_landscape_architecture_confirm
   - intent: goodbye
@@ -90,8 +90,8 @@ stories:
 - story: landscape_architecture_07
   steps:
   - action: utter_greet
-  - intent: landscape_architecture/artexam
-  - action: utter_landscape_architecture_artexam
+  - intent: landscape_architecture/art_exam
+  - action: utter_landscape_architecture_art_exam
   - intent: goodbye
   - action: utter_goodbye
 
@@ -168,21 +168,11 @@ stories:
   - action: utter_goodbye
 
 
-#- story: recruitment_01
-#  steps:
-#  - action: utter_greet
-#  - intent: recruitment/reach  #form表单
-#  - action: recruitment_form
-#  - active_loop: recruitment_form
-#  - active_loop: null
-#  - action: utter_recruitment
-
-
-
-#  - action: action_province
-#  - intent: recruitment/province
-#  - action: utter_not_start
-#  - intent: recruitment/borderline
-#  - action: action_rank_infor
-#  - intent: recruitment/type
-#  - action: action_recruitment_result
+- story: recruitment_01
+  steps:
+  - action: utter_greet
+  - intent: recruitment/reach  #form表单
+  - action: recruitment_form
+  - active_loop: recruitment_form
+  - active_loop: null
+  - action: action_recruitment

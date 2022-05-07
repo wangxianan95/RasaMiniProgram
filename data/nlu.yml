@@ -105,7 +105,7 @@ nlu:
     - 为什么两个有差？
     - 为什么这两个有差别？
 
-- intent: greet_&_recruitment
+- intent: recruitment/greet
   examples: |
     - 您好，老师，我想咨询一下报考的事儿
 
@@ -116,6 +116,10 @@ nlu:
 - intent: recruitment/reach
   examples: |
     - 我想问一下，我家孩子报了北京林业大学，孩子的分数有没有可能被录取？
+    - 孩子被录取的可能性高吗？
+    - 我们家孩子能不能被录取？
+    - 你们的分数线是多少？
+    - 能不能报考你们学校？
 
 - intent: recruitment/province
   examples: |
@@ -127,10 +131,8 @@ nlu:
   examples: |
     - 哦哦，谢谢啊。我就想问一下，你们那个大概那个分数是多少？
 
-- intent: recruitment/type
+- intent: recruitment/typecourse
   examples: |
     -  哦，我们学的是理科{entity:typecourse}，是物化这一块。
     - 学文科{entity:typecourse}的。
     - 我是理科生{entity:typecourse}。
-
-

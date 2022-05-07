@@ -5,51 +5,65 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- confirm:
+- greet:
     use_entities: true
 - goodbye:
     use_entities: true
-- greet:
+- confirm:
     use_entities: true
 - greet_confirm:
     use_entities: true
-- landscape_architecture:
-    use_entities: true
-- landscape_architecture/admission_subject:
-    use_entities: true
 - landscape_architecture/art_exam:
-    use_entities: true
-- landscape_architecture/art_foundation:
     use_entities: true
 - landscape_architecture/confirm:
     use_entities: true
-- landscape_architecture/course:
-    use_entities: true
-- landscape_architecture/degree:
+- landscape_architecture/art_foundation:
     use_entities: true
 - landscape_architecture/design:
     use_entities: true
-- landscape_architecture/doctoral_program:
+- landscape_architecture/greet:
     use_entities: true
-- landscape_architecture/employment_prospect:
+- thanks:
     use_entities: true
-- landscape_architecture/garden_department:
+- landscape_architecture/course:
     use_entities: true
 - landscape_architecture/garden_difference:
-    use_entities: true
-- landscape_architecture/greet:
     use_entities: true
 - landscape_architecture/major_transfer:
     use_entities: true
 - landscape_architecture/major_transfer_range:
     use_entities: true
+- landscape_architecture/doctoral_program:
+    use_entities: true
+- landscape_architecture/degree:
+    use_entities: true
+- landscape_architecture/garden_department:
+    use_entities: true
+- landscape_architecture/employment_prospect:
+    use_entities: true
 - landscape_architecture/postgraduate_school:
+    use_entities: true
+- landscape_architecture/admission_subject:
     use_entities: true
 - landscape_architecture/retreat:
     use_entities: true
 - landscape_architecture/why_degree_difference:
     use_entities: true
-- thanks:
+- landscape_architecture:
+    use_entities: true
+- recruitment/greet:
+    use_entities: true
+- recruitment/information:
+    use_entities: true
+- recruitment/reach:
+    use_entities: true
+- recruitment/province:
+    use_entities: true
+- recruitment/borderline:
+    use_entities: true
+- recruitment/typecourse:
+    use_entities: true
+- recruitment:
     use_entities: true
 entities:
 - province
@@ -59,7 +73,7 @@ entities:
 slots:
   province:
     type: rasa.shared.core.slots.TextSlot
-    initial_value: 北京
+    initial_value: null
     auto_fill: true
     influence_conversation: true
   course:
@@ -69,7 +83,12 @@ slots:
     influence_conversation: false
   typecourse:
     type: rasa.shared.core.slots.TextSlot
-    initial_value: 理科
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  major:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
     auto_fill: true
     influence_conversation: true
 responses:
@@ -80,7 +99,7 @@ responses:
   - text: 嗯，你说。
   utter_Arts_and_Sciences:
   - text: 嗯
-  utter_landscape_architecture_artexam:
+  utter_landscape_architecture_art_exam:
   - text: 不，不要求有美术工功底，但是建议有美术功底。
   - text: 没有相关的考试，我们是建议大家有一定的美术基础。因为这三个专业进校之后会学习一些包括素描、水彩相关的美术课程。如果有相应的美术基础的话，学起来压力没有那么大。
   utter_landscape_architecture_confirm:
@@ -146,17 +165,19 @@ responses:
   - text: 你所在的省份是哪个？
   utter_ask_typecourse:
   - text: 文科生还是理科生？
-  utter_recruitment:
-  - text: 你们省排名10000可能会被录取
+  utter_ask_major:
+  - text: 你想询问的专业是哪个？
 actions:
 - action_province
 - action_course
-
-#forms: {}
-#  recruitment_form:
-#    required_slots:
-#      province:
-#        - type: text
-#      typecourse:
-#        - type: text
+- action_recruitment
+forms:
+  recruitment_form:
+    required_slots:
+      major:
+      - type: from_text
+      province:
+      - type: from_text
+      typecourse:
+      - type: from_text
 e2e_actions: []
